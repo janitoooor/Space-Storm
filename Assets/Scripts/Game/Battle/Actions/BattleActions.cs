@@ -72,7 +72,7 @@ using UnityEngine.InputSystem.Utilities;
 /// }
 /// </code>
 /// </example>
-public partial class @GameActions: IInputActionCollection2, IDisposable
+public partial class BattleActions: IInputActionCollection2, IDisposable
 {
     /// <summary>
     /// Provides access to the underlying asset instance.
@@ -82,7 +82,7 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
     /// <summary>
     /// Constructs a new instance.
     /// </summary>
-    public @GameActions()
+    public BattleActions()
     {
         asset = InputActionAsset.FromJson(@"{
     ""version"": 1,
@@ -1167,7 +1167,7 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
     }
 
-    ~@GameActions()
+    ~BattleActions()
     {
         UnityEngine.Debug.Assert(!m_Player.enabled, "This will cause a leak and performance issues, GameActions.Player.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_UI.enabled, "This will cause a leak and performance issues, GameActions.UI.Disable() has not been called.");
@@ -1260,12 +1260,12 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
     /// </summary>
     public struct PlayerActions
     {
-        private @GameActions m_Wrapper;
+        private BattleActions m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-        public PlayerActions(@GameActions wrapper) { m_Wrapper = wrapper; }
+        public PlayerActions(BattleActions wrapper) { m_Wrapper = wrapper; }
         /// <summary>
         /// Provides access to the underlying input action "Player/Move".
         /// </summary>
@@ -1445,12 +1445,12 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
     /// </summary>
     public struct UIActions
     {
-        private @GameActions m_Wrapper;
+        private BattleActions m_Wrapper;
 
         /// <summary>
         /// Construct a new instance of the input action map wrapper class.
         /// </summary>
-        public UIActions(@GameActions wrapper) { m_Wrapper = wrapper; }
+        public UIActions(BattleActions wrapper) { m_Wrapper = wrapper; }
         /// <summary>
         /// Provides access to the underlying input action "UI/Navigate".
         /// </summary>
