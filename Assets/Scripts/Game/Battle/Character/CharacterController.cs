@@ -7,8 +7,6 @@ namespace Game.Battle.Character
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class CharacterController : MonoBehaviour, BattleActions.IPlayerActions
     {
-        private static readonly int xInputAnimatorProperty = Animator.StringToHash("X Input");
-        private static readonly int yInputAnimatorProperty = Animator.StringToHash("Y Input");
         private static readonly int speedAnimatorProperty = Animator.StringToHash("Speed");
         private static readonly int gunAnimatorProperty = Animator.StringToHash("Gun");
 
@@ -86,8 +84,6 @@ namespace Game.Battle.Character
 
         private void LateUpdate()
         {
-            animator.SetFloat(xInputAnimatorProperty, lastMoveInputNormalized.x);
-            animator.SetFloat(yInputAnimatorProperty, lastMoveInputNormalized.y);
             animator.SetFloat(speedAnimatorProperty, currentSpeed);
             animator.SetFloat(gunAnimatorProperty, currentWeapon.weaponAnimationIndex);
 

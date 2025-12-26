@@ -5,11 +5,14 @@ namespace Game.Battle.Weapon
 	public sealed class WeaponRenderer : MonoBehaviour
 	{
 		[SerializeField]
-		private GameObject weaponR;
+		private GameObject[] weaponsR;
 
 		[SerializeField]
-		private GameObject weaponL;
+		private GameObject[] weaponsL;
 
+		[SerializeField]
+		private SpriteRenderer[] spriteRenderersHand;
+		
 		public void ShowRenderer()
 			=> gameObject.SetActive(true);
 
@@ -18,8 +21,14 @@ namespace Game.Battle.Weapon
 
 		public void SetFlip(bool isFlip)
 		{
-			weaponR.gameObject.SetActive(!isFlip);
-			weaponL.gameObject.SetActive(isFlip);
+			foreach (var weaponR in weaponsR)
+				weaponR.gameObject.SetActive(!isFlip);
+
+			foreach (var weaponL in weaponsL)
+				weaponL.gameObject.SetActive(isFlip);
+
+			foreach (var spriteRenderer in spriteRenderersHand)
+				spriteRenderer.flipX = isFlip;
 		}
 	}
 }
