@@ -4,5 +4,6 @@ namespace Game.Battle.Weapon
     {
         public override WeaponType weaponType => WeaponType.Riffle;
         public override float weaponAnimationIndex => 1f;
+        public override int WeaponIndex => 1;
     }
 }
