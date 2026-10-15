@@ -1,0 +1,86 @@
+Space music pack — licenses and sources
+=======================================
+All files below are CC0 (Creative Commons Zero / public domain dedication)
+unless noted. Attribution is optional but appreciated.
+
+--- menu_pause/ ---
+
+Out_in_Space_Menu.ogg
+  Title:  Out in Space Menu
+  Author: Agecaf
+  License: CC0
+  Source: https://opengameart.org/content/out-in-space-0
+  Direct: https://opengameart.org/sites/default/files/Out%20in%20Space%20Menu.ogg
+
+a_block_in_space.wav
+  Title:  A Block in Space
+  Author: Umplix
+  License: CC0
+  Source: https://opengameart.org/content/a-block-in-space
+  Direct: https://opengameart.org/sites/default/files/a_block_in_space.wav
+
+tragic_ambient_main_menu.ogg
+  Title:  Tragic ambient main menu
+  Author: brandon75689 (submitted by HaelDB)
+  License: CC0 (also listed as OGA-BY 3.0; CC0 applies)
+  Source: https://opengameart.org/content/tragic-ambient-main-menu
+  Direct: https://opengameart.org/sites/default/files/ambientmain_0.ogg
+
+--- action/ ---
+
+singularity_action.mp3
+  Title:  Singularity (action)
+  Author: vitalezzz
+  License: CC0
+  Source: https://opengameart.org/content/singularity-0
+  Direct: https://opengameart.org/sites/default/files/singularity_action_0.mp3
+
+gravity_turn_action.mp3
+  Title:  Gravity Turn (action)
+  Author: vitalezzz
+  License: CC0
+  Source: https://opengameart.org/content/gravity-turn
+  Direct: https://opengameart.org/sites/default/files/gravity_turn_action_2.mp3
+
+Out_in_Space.ogg
+  Title:  Out in Space (game theme)
+  Author: Agecaf
+  License: CC0
+  Source: https://opengameart.org/content/out-in-space-0
+  Direct: https://opengameart.org/sites/default/files/Out%20in%20Space_0.ogg
+
+--- exploration/ ---
+
+singularity_calm.mp3
+  Title:  Singularity (calm)
+  Author: vitalezzz
+  License: CC0
+  Source: https://opengameart.org/content/singularity-0
+  Direct: https://opengameart.org/sites/default/files/singularity_calm_0.mp3
+
+gravity_turn_calm.mp3
+  Title:  Gravity Turn (calm)
+  Author: vitalezzz
+  License: CC0
+  Source: https://opengameart.org/content/gravity-turn
+  Direct: https://opengameart.org/sites/default/files/gravity_turn_calm_6.mp3
+
+space_graveyard.mp3
+  Title:  Space Graveyard - Ambient Track
+  Author: TinyWorlds
+  License: CC0
+  Source: https://opengameart.org/content/space-graveyard-ambient-track
+  Direct: https://opengameart.org/sites/default/files/space_graveyard_4.mp3
+
+=======================================
+Unity Asset Store packs (not included — require Unity Editor / Asset Store download):
+  Free Ambient & Lo-Fi Sci-Fi Music Starter Pack — menu / hubs
+    https://assetstore.unity.com/packages/audio/music/electronic/free-ambient-lo-fi-sci-fi-music-starter-pack-music-players-355874
+  Space Game BGM #2 — action / tension
+    https://assetstore.unity.com/packages/audio/music/space-game-bgm-2-169782
+  ENTROPY | Liminal Space Music (Free Starter Pack) — exploration ambient
+    https://assetstore.unity.com/packages/audio/music/entropy-liminal-space-music-free-starter-pack-392436
+  Free 30 Sci-fi Space Tracks Music Pack — mixed moods (pick per scene)
+    https://assetstore.unity.com/packages/audio/music/free-30-sci-fi-space-tracks-music-pack-354566
+  Free - Sci-Fi and Cyberpunk Music Pack — cinematic ambient / dark action
+    https://assetstore.unity.com/packages/audio/ambient/sci-fi/free-sci-fi-and-cyberpunk-music-pack-264590
