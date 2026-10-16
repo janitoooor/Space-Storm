@@ -13,6 +13,12 @@ namespace Game.Battle.Weapon
 		private Sprite sprite;
 
 		[SerializeField]
+		private Sprite spriteUp;
+
+		[SerializeField]
+		private Sprite spriteDown;
+
+		[SerializeField]
 		private Color color = Color.white;
 
 		[SerializeField]
@@ -35,6 +41,8 @@ namespace Game.Battle.Weapon
 
 		public string WeaponName => weaponName;
 		public Sprite Sprite => sprite;
+		public Sprite SpriteUp => spriteUp;
+		public Sprite SpriteDown => spriteDown;
 		public Color Color => color;
 		public float Scale => scale;
 		public float FireInterval => fireInterval;

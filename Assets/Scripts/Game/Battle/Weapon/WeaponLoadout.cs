@@ -29,6 +29,8 @@ namespace Game.Battle.Weapon
 		private int reloadFinished;
 		private int shotsFired;
 
+		private bool suppressed;
+
 		public int EmptySignal => emptySignal;
 		public int ShotsFired => shotsFired;
 		public int ReloadStarted => reloadStarted;
@@ -119,6 +121,9 @@ namespace Game.Battle.Weapon
 			return true;
 		}
 
+		public void SetSuppressed(bool value)
+			=> suppressed = value;
+
 		public void Hide()
 			=> weaponRenderer.HideRenderer();
 
@@ -127,7 +132,7 @@ namespace Game.Battle.Weapon
 
 		public bool TryShoot(Vector2 direction)
 		{
-			if (!IsDrawn || IsReloading)
+			if (!IsDrawn || IsReloading || suppressed)
 				return false;
 
 			FirearmDefinition firearm = weapons.Get(selected);
@@ -149,7 +154,7 @@ namespace Game.Battle.Weapon
 
 		public bool ConsumeEmptyClick()
 		{
-			if (!IsDrawn || IsReloading || emptyLatch || ammo[selected] > 0)
+			if (!IsDrawn || IsReloading || suppressed || emptyLatch || ammo[selected] > 0)
 				return false;
 
 			emptyLatch = true;
@@ -220,7 +225,7 @@ namespace Game.Battle.Weapon
 
 		private void BeginReload()
 		{
-			if (!IsDrawn || IsReloading)
+			if (!IsDrawn || IsReloading || suppressed)
 				return;
 
 			FirearmDefinition firearm = weapons.Get(selected);
@@ -248,7 +253,7 @@ namespace Game.Battle.Weapon
 		private void ApplySelected()
 		{
 			FirearmDefinition firearm = weapons.Get(selected);
-			weaponRenderer.ApplyVisual(firearm.Sprite, firearm.Color, firearm.Scale);
+			weaponRenderer.ApplyVisual(firearm.Sprite, firearm.SpriteUp, firearm.SpriteDown, firearm.Color, firearm.Scale);
 		}
 	}
 }
