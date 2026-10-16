@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9a633c12e49947b59f2a081d2be2964, type: 3}
+  m_Name: enemies
+  m_EditorClassIdentifier: Game.Battle::Game.Battle.Enemy.EnemiesConfig
+  enemies:
+  - enemyName: Slime
+    pattern: 0
+    speed: 2.8
+    health: 8
+    damage: 1
+    noticeDistance: 5.5
+    attackDistance: 0.8
+    contactInterval: 0.7
+    contactClip: {fileID: 8300000, guid: ebbed237de04ca44eaab696610ddc5c2, type: 3}
+  - enemyName: Shark
+    pattern: 1
+    speed: 4.2
+    health: 16
+    damage: 2
+    noticeDistance: 6
+    attackDistance: 1.15
+    contactInterval: 0.85
+    contactClip: {fileID: 8300000, guid: 5f8a23dfc807a5a41a922d47180674b3, type: 3}

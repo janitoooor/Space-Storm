@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Game.Battle
 {
-	public sealed class Target : MonoBehaviour
+	public sealed class Target : MonoBehaviour, IDamageable
 	{
 		private const float FlashSeconds = 0.08f;
 		private const float RespawnSeconds = 0.7f;

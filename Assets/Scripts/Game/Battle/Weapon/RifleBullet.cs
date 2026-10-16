@@ -96,9 +96,9 @@ namespace Game.Battle.Weapon
 			if (nearestIndex < 0)
 				return false;
 
-			Target target;
-			if (hits[nearestIndex].collider.TryGetComponent(out target))
-				target.Hit(damage);
+			IDamageable damageable;
+			if (hits[nearestIndex].collider.TryGetComponent(out damageable))
+				damageable.Hit(damage);
 
 			gameObject.SetActive(false);
 			return true;
